@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Choose color: black, white, red, green, blue, yellow (orange)"
+read -p "Color:" ALKR
+if [ "$ALKR" != "$NULL" ]
+then
+	setterm -foreground $ALKR
+	echo "Done!"
+else
+	echo "This is color is not found...Please call back"
+fi
